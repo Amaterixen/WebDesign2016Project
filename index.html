@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Sm4sh Learning Quiz
+		</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+		<!-- Own CSS -->
+		<link rel="stylesheet" href="style.css" />
+		<!-- jQuery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4">
+				</div>
+				<div class="col-md-4 col-12-xs box" id="heading">
+					<img src="images/title.png" alt="Super Smash Bros." />
+					<h1>Learning Quiz</h1>
+				</div>
+			</div>
+			<br />
+			<div class="row">
+				<div class="col-4-md">
+				</div>
+				<div class="col-4-md col-12-xs box" id="main">
+				
+					<p class="select">Select your game type!</p>
+					<p class="question">Question:</p>
+					<p class="question"><span id="ansChecker"></span></p>
+					
+					
+					<a href="forfun.html"><img class="buttonSetMain" src="images/ForFun.png" alt="For Fun" onclick=fader(); /></a>
+					<a href="forglory.html"><img class="buttonSetMain" src="images/ForGlory.png" alt="For Glory" onclick=fader(); /></a>
+					
+					
+					<button class="buttonSet1" id="option1" onclick=ansButton1();></button>
+					<button class="buttonSet1" id="option2" onclick=ansButton2();></button>
+					<button class="buttonSet1" id="option3" onclick=ansButton3();></button>
+
+					<p id="correctAnswer"></p>
+					
+					<br />
+					
+					<button class="buttonSet2" id="reloader" onclick=reload();>Return</button>
+					
+					
+				</div>
+			</div>
+		</div>
+		<script src="js/smashMain.js"></script>
+	</body>
+</html>
